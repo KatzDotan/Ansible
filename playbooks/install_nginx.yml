@@ -1,0 +1,11 @@
+---
+
+- hosts: all
+  become: true
+  tasks:
+
+  - name: install nginx package
+    yum:
+      name: nginx
+      state: present 
+    
